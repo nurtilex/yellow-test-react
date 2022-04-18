@@ -1,0 +1,41 @@
+@import '../../assets/variables';
+
+.NoJogs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  width: 100%;
+  flex-grow: 1;
+
+  .message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: auto;
+    height: auto;
+
+    & > span {
+      font-size: 1.5rem;
+      color: rgb(161, 159, 159);
+      font-weight: 300;
+    }
+  }
+
+  .createBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 25px;
+    border: 3px solid $purple;
+    color: $purple;
+    font-weight: bold;
+    outline: none;
+    width: 12rem;
+    height: 2.7rem;
+  }
+}

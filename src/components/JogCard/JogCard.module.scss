@@ -1,0 +1,51 @@
+@import '../../assets/variables';
+
+.JogCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26rem;
+  height: 10rem;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    height: 90%;
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      height: 80%;
+      width: 55%;
+
+      .date {
+        color: rgb(120, 119, 119);
+      }
+    }
+
+    .bold {
+      font-weight: bold;
+
+      & ~ span {
+        color: rgb(120, 119, 119);
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .JogCard {
+    width: 100%;
+    height: 14rem;
+    border-bottom: 2px solid $gray;
+
+    .wrapper {
+      width: 70%;
+    }
+  }
+}

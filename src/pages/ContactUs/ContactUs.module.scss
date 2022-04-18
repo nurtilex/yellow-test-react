@@ -1,0 +1,11 @@
+.ContactUs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-grow: 1;
+
+  & > a {
+    font-size: 5vw;
+  }
+}

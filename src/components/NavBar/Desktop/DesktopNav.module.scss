@@ -1,0 +1,58 @@
+@import '../../../assets/variables';
+
+.desktopNav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+
+  li {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding: 0 0.25rem 0.25rem;
+    border-bottom: 3px solid transparent;
+    &:hover {
+      cursor: pointer;
+    }
+
+    & > a {
+      text-decoration: none;
+      color: inherit;
+      min-width: 5rem;
+      white-space: nowrap;
+    }
+
+    &.active {
+      border-bottom: 2px solid $white;
+    }
+  }
+
+  .filter {
+    display: block;
+    width: 30px;
+    height: 33px;
+    margin-bottom: 4px;
+    background: url('../../../assets/svg/filter.svg') center center no-repeat;
+    background-size: cover;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .filterActive {
+    width: 20px;
+    height: 20px;
+    background: url('../../../assets/svg/filter-active.svg') center center
+      no-repeat;
+    background-size: cover;
+    margin-bottom: 4px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

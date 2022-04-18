@@ -1,0 +1,35 @@
+@import '../../assets/variables';
+
+.Jogs {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  flex-grow: 1;
+  background-color: $white;
+
+  .add {
+    position: absolute;
+    bottom: 2rem;
+    right: 3rem;
+    background-color: transparent;
+    border: transparent;
+    outline: transparent;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .Jogs {
+    .add {
+      position: relative;
+      margin-top: 7rem;
+      align-self: flex-end;
+    }
+  }
+}
