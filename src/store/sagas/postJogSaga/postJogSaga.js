@@ -2,8 +2,8 @@ import { takeEvery, call, put, all } from 'redux-saga/effects';
 import { userActions } from '../../slices/userSlice';
 import { filteringActions } from '../../slices/filteringSlice';
 import { triggerPostAction } from '../index';
-import { postJog } from '../../../api/jogs';
-import { getJogsById } from '../../../api/auth';
+import { getJogsById, postJog } from '../../../api/jogs';
+
 function* fetchPost({ payload }) {
   try {
     const response = yield call(postJog, payload);

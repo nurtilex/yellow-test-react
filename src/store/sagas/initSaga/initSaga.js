@@ -1,7 +1,8 @@
 import { takeEvery, call, put, all } from 'redux-saga/effects';
 import { userActions } from '../../slices/userSlice';
 import { initAction } from '../index';
-import { authUser, getJogsById } from '../../../api/auth';
+import { authUser } from '../../../api/auth';
+import { getJogsById } from '../../../api/jogs';
 function* fetchJogs() {
   try {
     const user = yield call(authUser);
